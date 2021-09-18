@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/katiele47/mithack21/issues"
   },
-  "homepage": "https://github.com/katiele47/mithack21#readme"
+  "homepage": "https://github.com/katiele47/mithack21#readme",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1"
+  }
 }
