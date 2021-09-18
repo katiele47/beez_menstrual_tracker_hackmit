@@ -1,0 +1,19 @@
+{
+  "name": "mithack21",
+  "version": "1.0.0",
+  "description": "mithack21 project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/katiele47/mithack21.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/katiele47/mithack21/issues"
+  },
+  "homepage": "https://github.com/katiele47/mithack21#readme"
+}
