@@ -1,0 +1,21 @@
+.calender {
+  display: flex;
+  margin-left: 55px;
+  text-align: center;
+}
+
+.date {
+  margin-right: 25px;
+}
+
+.date > h5 {
+  font-size: 12px;
+}
+
+.date > h6 {
+  font-size: 10px;
+}
+
+.red{
+    color:red;
+}

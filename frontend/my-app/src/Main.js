@@ -2,10 +2,12 @@ import React from 'react'
 import './main.css'
 import Symptoms from './components/Symptoms'
 import Model from './components/Model'
+import Calendar from './components/Calendar'
 
 function Main() {
     return (
-         <div className="container">
+        <div>
+            <div className="container">
              <div className="row  l-5">
             <div className="col-lg-3 mt-5 ">
             <Symptoms />
@@ -34,6 +36,12 @@ function Main() {
         
           
         </div>
+            <div className="calender">
+             <Calendar />
+            </div>
+           
+        </div>
+         
         
     )
 }

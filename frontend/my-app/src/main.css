@@ -67,3 +67,8 @@ ul > li {
 .luteral {
   background: #18515c;
 }
+
+
+.calender{
+  display:flex;
+}
