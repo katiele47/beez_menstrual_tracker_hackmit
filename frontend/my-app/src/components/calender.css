@@ -1,6 +1,6 @@
 .calender {
   display: flex;
-  margin-left: 55px;
+  margin-left: 60px;
   text-align: center;
 }
 
@@ -9,13 +9,15 @@
 }
 
 .date > h5 {
-  font-size: 12px;
+  font-size: 14px;
+
 }
 
 .date > h6 {
-  font-size: 10px;
+  font-size: 9px;
+  margin-bottom: 15px;
 }
 
-.red{
-    color:red;
+.red {
+  color: red;
 }
