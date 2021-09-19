@@ -9,13 +9,13 @@ function Main() {
         <div>
             <div className="container">
              <div className="row  l-5">
-            <div className="col-lg-3 mt-5 ">
+            <div className="col-lg-3 mt-4 ">
             <Symptoms />
             </div>
 
-            <div className="col-lg-7 mt-5  model">
+            <div className="col-lg-7 mt-3  model">
               <Model />
-            
+              
               
             </div>
          </div>

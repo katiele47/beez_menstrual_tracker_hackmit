@@ -205,9 +205,9 @@ let resp={}
                         <input type="date"  className="periodDate" onChange={(e)=>setlastPeriodDate(e.target.value)} />
                         </div>
 
-                        <button onClick={submit}>Submit</button>
-                        <button onClick={postData}>Post data</button>
-                        <button onClick={getData}>Get research data</button>
+                        <button onClick={submit} className="btn_submit grow">Submit</button>
+                        <button onClick={postData} className="btn_post grow">Post data</button>
+                        <button onClick={getData} className="btn_research grow">Get research data</button>
             </div>
            
 

@@ -16,8 +16,8 @@
   background-color: #dabdf5;
   z-index: 10;
   margin-right: 10px;
-  color:white;
-  
+  color: white;
+
   text-align: center;
 }
 .title-icon > h5 {
@@ -27,7 +27,7 @@
   font-weight: 700;
 }
 .title_icon > h6 {
-    margin-top:1px;
+  margin-top: 1px;
   color: white;
 }
 
@@ -107,4 +107,28 @@
   border-radius: 5px;
   border: none;
   background: #ebebe3;
+}
+
+.btn_submit {
+  margin-top: 8px;
+  border-radius: 10px;
+  border: none;
+  margin-right: 25px;
+  width: 100px;
+}
+
+.btn_post {
+  margin-top: 8px;
+  border-radius: 10px;
+  border: none;
+  margin-left: 15px;
+  width: 100px;
+}
+
+.btn_research {
+  margin-top: 8px;
+  border-radius: 10px;
+  border: none;
+  margin-left: 26px;
+  width: 200px;
 }
