@@ -14,11 +14,8 @@ function Main() {
             </div>
 
             <div className="col-lg-7 mt-5  model">
-             
               <Model />
-             
-                
-           
+            
               
             </div>
          </div>

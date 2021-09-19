@@ -55,17 +55,28 @@ let resp={}
   
             alert(err)
         }
-       
-       
-        setphase(resp.data.message)
-        
+        setphase(resp.data.message);
     }
+
+      async function postData(){
+        try{
+            let input={
+                phaseResult: phase,
+                lastPeriodDate: lastPeriodDate
+            }
+            console.log(input)
+
+          resp = await axios.post("http://localhost:8080/postPatient", input)
+        } catch(err){
+            alert(err)
+        }
+    }
+
     return (
-    
             <div className="symptoms">
               
                     <div className="row heading ">
-                            <div className="col-lg-4 title-icon" onClick={submit}>
+                            <div className="col-lg-4 title-icon">
                                  <h5 >{d.getUTCDate()}</h5>
                                   <h6>{monthNames[d.getMonth()]} </h6>
                             </div>
@@ -186,6 +197,8 @@ let resp={}
                         <input type="date"  className="periodDate" onChange={(e)=>setlastPeriodDate(e.target.value)} />
                         </div>
 
+                        <button onClick={submit}>Submit</button>
+                        <button onClick={postData}>Post data</button>
                         
             </div>
            

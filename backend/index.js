@@ -94,7 +94,7 @@ app.post("/postPatient", async (req, res) => {
 
     //Reformat date YYYY-MM-DD
     obj.code.coding[0].display = new Date(mydate).toISOString().split('T')[0];
-    obj.code.text = req.body.todayDate;
+    obj.code.text = new Date();//req.body.todayDate;
     obj.meta.tag[0].display = req.body.phaseResult;
     
     const response = await axios.post(postPatientApi,obj, {
