@@ -16,11 +16,12 @@ const model = new tangram.Model(modelData.buffer);
 
 const app = express();
 
+const corsOptions ={
+    origin:'*', 
+    credentials:true,            //access-control-allow-credentials:true
+    optionSuccessStatus:200,
+ }
 
-
-var corsOptions = {
-    origin: "http://localhost:8081",
-  };
 app.use(cors(corsOptions));
 app.use(cookieParser());
 
@@ -132,13 +133,13 @@ app.post("/getPredictionResult", (req, res) => {
     const offset = new Date(req.body.lastPeriodDate).getTimezoneOffset();
     let last_period_date = new Date(req.body.lastPeriodDate).getTime()-(offset*60*1000); //Date
 
-    let length_of_cyle = req.body.lengthCycle; //int
+    let length_of_cyle = parseInt(req.body.lengthCycle); //int
     let flow_level = req.body.flow; //string
 
     // if (flow_level == "heavy") {
     //     //update FirstDayofHigh and TotalNumberofHighDays
     // }
-    const input = {
+    let input = {
         ClientID: "nfp8122",
         CycleNumber: 3,
         Group: 0,

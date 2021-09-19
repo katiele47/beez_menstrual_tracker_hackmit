@@ -15,10 +15,6 @@ import pain_1 from '../assets/images/pain_1.svg'
 import pain_2 from '../assets/images/pain_2.svg'
 import pain_3 from '../assets/images/pain_3.svg'
 
-
-
-
-
 function Symptoms() {
 
     const [flow, setflow] = useState("")
@@ -39,22 +35,23 @@ function Symptoms() {
     console.log(lengthCycle)
     console.log(lastPeriodDate)
 */ 
-const resp={}
+
+let resp={}
     async function submit(){
         try{
-            const symptoms={
+            let symptoms={
                 flow,
                 lengthCycle,
-                lastPeriodDate:lastPeriodDate
+                lastPeriodDate: lastPeriodDate
             }
             console.log(symptoms)
-          
-           resp =await  axios.post("http://localhost:8080/getPredictionResult",symptoms)
-        }catch(err){
+
+           resp = await axios.post("http://localhost:8080/getPredictionResult", symptoms)
+        } catch(err){
   
             alert(err)
         }
-        console.log(resp)
+        console.log(resp.data.message);
     }
     return (
     
