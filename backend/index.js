@@ -2,12 +2,9 @@ require("dotenv").config();
 const express = require("express");
 const app = express();
 
-
-
 app.use(express.json());
 
 const postPatientApi = "https://fhir.a4bb78it5rl2.static-test-account.isccloud.io/Observation"
-
 
 app.post("/postPatient", (req, res) => {
     //API that POST a patient to FHIR system
@@ -61,6 +58,8 @@ app.post("/postPatient", (req, res) => {
     //   }
 
 });
+
+
 
 // simple route
 app.get("/", (req, res) => {
