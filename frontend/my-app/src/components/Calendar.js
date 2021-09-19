@@ -4,7 +4,9 @@ import './calender.css'
 function Calendar() {
 
     const date = new Date();
-    
+    const val="follicula"
+    const phase=["follicula","ovulation","mensturation","luteral"]
+    const dur=[7,7,7,7]
     
     let dates =[]
     function getdates(){
@@ -26,12 +28,12 @@ function Calendar() {
     }
      getdates()
   
-    console.log(dates)
+   // console.log(dates)
     return (
         <div className="calender">
            {dates.map(date=>{
                return <div className="date">
-                   <h6 className={date.class}>{date.weekday}</h6>
+                   <h6 >{date.weekday}</h6>
                    <h5 className={date.class}>{date.day}</h5>
                </div>
               

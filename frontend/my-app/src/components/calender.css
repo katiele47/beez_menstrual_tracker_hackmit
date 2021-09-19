@@ -5,12 +5,11 @@
 }
 
 .date {
-  margin-right: 25px;
+  margin-right: 23px;
 }
 
 .date > h5 {
   font-size: 14px;
-
 }
 
 .date > h6 {
@@ -20,4 +19,9 @@
 
 .red {
   color: red;
+  background: white;
+  border-radius: 15px;
+  padding-bottom: 3px;
+  padding-top: 3px;
+  width: 35px;
 }

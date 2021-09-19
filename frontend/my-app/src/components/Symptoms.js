@@ -38,7 +38,8 @@ function Symptoms() {
     console.log(pain)
     console.log(lengthCycle)
     console.log(lastPeriodDate)
-*/
+*/ 
+const resp={}
     async function submit(){
         try{
             const symptoms={
@@ -48,12 +49,12 @@ function Symptoms() {
             }
             console.log(symptoms)
           
-          //  axios.post("http://localhost:8080/getPredictionResult",symptoms)
+           resp =await  axios.post("http://localhost:8080/getPredictionResult",symptoms)
         }catch(err){
            
             alert(err)
         }
-        // axios.post()
+        console.log(resp)
     }
     return (
     
