@@ -17,11 +17,33 @@
   margin-bottom: 15px;
 }
 
-.red {
-  color: red;
-  background: white;
-  border-radius: 15px;
-  padding-bottom: 3px;
-  padding-top: 3px;
-  width: 35px;
+.dgreen {
+    background: #18515c;
+    border-radius: 20px;
+   width: 28px;
+   padding-top:5px;
+   padding-bottom:5px;
+   
+}
+.lgreen{
+    background: #64d1a8;
+    border-radius: 20px;
+   width: 28px;
+   padding-top:5px;
+   padding-bottom:5px;
+}
+.lblue{
+  background: #7885a5;
+ 
+   border-radius: 20px;
+   width: 28px;
+   padding-top:5px;
+   padding-bottom:5px;
+}
+.lred{
+    background:#ff7167;
+    border-radius: 20px;
+    width: 28px;
+    padding-top:5px;
+    padding-bottom:5px;
 }

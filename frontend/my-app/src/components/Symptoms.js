@@ -1,16 +1,16 @@
-import React,{useState,useEffect} from 'react'
+import React,{useState,useEffect,useContext} from 'react'
 import './symptoms.css'
 import axios from 'axios'
+import PhaseContext from '../context/PhaseContext'
+
 import light_flow from '../assets/images/light_flow.svg'
 import heavy_flow from '../assets/images/heavy_flow.svg'
 import medium_flow from '../assets/images/medium_flow.svg'
 import spotting from '../assets/images/spotting.svg'
-
 import angry from '../assets/images/angry.svg'
 import calm from '../assets/images/calm.svg'
 import happy from '../assets/images/happy.svg'
 import sad from '../assets/images/sad.svg'
-
 import pain_1 from '../assets/images/pain_1.svg'
 import pain_2 from '../assets/images/pain_2.svg'
 import pain_3 from '../assets/images/pain_3.svg'
@@ -22,6 +22,8 @@ function Symptoms() {
     const [pain,setpain]  =  useState("")
     const [lengthCycle,setlengthCycle] = useState(0)
     const [lastPeriodDate,setlastPeriodDate] = useState(new Date())
+
+    const {phase ,setphase,day,setday} = useContext(PhaseContext)
     
     const monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun",
   "Jul", "Aug", "SEP", "Oct", "Nov", "Dec"
@@ -39,6 +41,8 @@ function Symptoms() {
 let resp={}
     async function submit(){
         try{
+           const input = new Date(lastPeriodDate)
+            setday(input.getUTCDate())
             let symptoms={
                 flow,
                 lengthCycle,
@@ -51,7 +55,10 @@ let resp={}
   
             alert(err)
         }
-        console.log(resp.data.message);
+       
+       
+        setphase(resp.data.message)
+        
     }
     return (
     

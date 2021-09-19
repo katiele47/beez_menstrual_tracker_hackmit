@@ -3,4 +3,10 @@
   min-height: 520px;
   width: 100%;
   border-radius: 10px;
+  text-align: center;
+  align-items: center;
+}
+
+.modelimg {
+  margin-top: 180px;
 }

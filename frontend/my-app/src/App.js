@@ -1,11 +1,15 @@
 
 import './App.css';
 import Main from './Main'
+import {PhaseContextProvider} from './context/PhaseContext'
 
 function App() {
   return (
     <div className="App">
-     <Main />
+      <PhaseContextProvider>
+         <Main />
+      </PhaseContextProvider>
+    
     </div>
   );
 }
