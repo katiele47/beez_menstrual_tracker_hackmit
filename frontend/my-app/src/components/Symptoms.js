@@ -71,6 +71,14 @@ let resp={}
             alert(err)
         }
     }
+    async function getData(){
+      try{
+        //show Postman/Backend
+        resp = await axios.get("http://localhost:8080/getPatientForResearch")
+      } catch(err){
+          alert(err)
+      }
+  }
 
     return (
             <div className="symptoms">
@@ -199,7 +207,7 @@ let resp={}
 
                         <button onClick={submit}>Submit</button>
                         <button onClick={postData}>Post data</button>
-                        
+                        <button onClick={getData}>Get research data</button>
             </div>
            
 
