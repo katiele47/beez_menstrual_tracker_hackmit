@@ -1,6 +1,110 @@
-.symptoms{
-    min-height:510px;
-    min-width:300px;
-    background: #FEDA9C;
-    border-radius: 10px;
+.symptoms {
+  min-height: 530px;
+  min-width: 300px;
+  background: #feda9c;
+  border-radius: 10px;
+  padding: 15px;
+  margin-left: 40px;
+}
+
+.title-icon {
+  width: 60px;
+  height: 60px;
+  border: 5px solid #92ccd8;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: #dabdf5;
+  z-index: 10;
+  margin-right: 10px;
+  color:white;
+  
+  text-align: center;
+}
+.title-icon > h5 {
+  z-index: 50;
+  color: white;
+  margin-bottom: 0;
+  font-weight: 700;
+}
+.title_icon > h6 {
+    margin-top:1px;
+  color: white;
+}
+
+.heading {
+  padding-left: 12px;
+  margin-bottom: 12px;
+}
+.sub-heading {
+  font-size: 19px;
+  font-weight: 700;
+}
+
+.title-text > h2 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.img {
+  height: 48px;
+  width: 48px;
+  object-fit: cover;
+}
+
+.sym_text {
+  font-size: 12.5px;
+  margin-top: 5px;
+  margin-left: 3px;
+  font-weight: 600;
+}
+
+.sym_img > input {
+  display: none;
+}
+.sym_img > .img {
+  cursor: pointer;
+  border: 2px solid #feda9c;
+  border-radius: 15px;
+}
+.sym_img > input:checked + img {
+  border: 3px solid #92ccd8;
+}
+
+.sym_img > input:checked + h6 {
+  color: orange;
+}
+
+.grow {
+  transition: all 0.2s ease-in-out;
+}
+
+.grow:hover {
+  transform: scale(1.1);
+}
+
+.img-col {
+  margin-right: 18px;
+}
+
+.mood > .sym_img > img {
+  border-radius: 25px;
+}
+
+.total_days {
+  max-width: 50%;
+  margin-left: 15px;
+  border-radius: 5px;
+  border: none;
+  background: #ebebe3;
+  margin-bottom: 4px;
+}
+.total_days:focus {
+  border: none;
+}
+.periodDate {
+  max-width: 50%;
+  margin-left: 15px;
+  border-radius: 5px;
+  border: none;
+  background: #ebebe3;
 }

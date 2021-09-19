@@ -6,31 +6,31 @@ import Model from './components/Model'
 function Main() {
     return (
          <div className="container">
-             <div className="row ">
-            <div className="col-lg-3 m-5">
+             <div className="row  l-5">
+            <div className="col-lg-3 mt-5 ">
             <Symptoms />
             </div>
 
-            <div className="col-lg-7 mt-5 mb-2 model">
+            <div className="col-lg-7 mt-5  model">
              
               <Model />
              
                 
-                   
-          
+           
               
             </div>
          </div>
-           
-          <div className="reference mb-4">
-          <ul className="m-4">
-                     <li> <div className="circle"></div> follicula phase</li>
-                        <li><div className="circle"></div> Ovulation</li>
-                        <li><div className="circle"></div> luteral phase</li>
-                        <li><div className="circle"></div> menstrual phase</li> 
+         <div className="reference mb-4 mt-0">
+          <ul className="mb-4">
+                     <li> <div className="circle follicula"></div> follicula phase</li>
+                        <li><div className="circle ovulating"></div> Ovulation</li>
+                        <li><div className="circle luteral"></div> luteral phase</li>
+                        <li><div className="circle menstrual"></div> menstrual phase</li> 
              </ul>
               
-         </div>  
+         </div>     
+          
+          
         
           
         </div>

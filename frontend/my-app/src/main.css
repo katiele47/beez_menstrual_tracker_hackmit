@@ -1,48 +1,69 @@
 .container {
-    margin: 50px;
-    margin-left: 100px;
-  
-    border-radius: 10px;
-    /* eraser */
-  
-    background: #c7968b;
-  }
-  
-  h1 {
-    text-align: center;
-  }
-  
-  .model {
-    margin-left: 100px;
-  }
-  
-  .circle {
-    width: 15px;
-    height: 15px;
-    border: 2px solid white;
-    border-radius: 50%;
-    display: inline-block;
-    background-color: red;
-    z-index: 10;
-    border-color: white;
-  }
-  
-  ul {
-    display: flex;
-    list-style-type: none;
-  }
-  
-  ul > li {
-    margin-right: 35px;
-    color: white;
-    font-family: "Space Mono";
-    background-position: 100%;
-  }
-  
-  .reference {
-    display: flex;
-    -ms-flex-align: end;
-    text-align: right;
-    width:70%;
-  }
-  
+  margin: 25px;
+  margin-left: 100px;
+
+  border-radius: 10px;
+  /* eraser */
+
+  background: #c7968b;
+}
+
+h1 {
+  text-align: center;
+}
+
+.model {
+  margin-left: 180px;
+}
+
+.circle {
+  width: 25px;
+  height: 25px;
+  border: 2px solid white;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: red;
+  z-index: 10;
+
+  margin-right: 10px;
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: right;
+  width: 100%;
+}
+
+ul > li {
+  margin-left: 65px;
+  color: white;
+  font-family: "Space Mono";
+  background-position: 100%;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.reference {
+  display: flex;
+  -ms-flex-align: end;
+  text-align: right;
+}
+
+.follicula {
+  background: #7885a5;
+}
+
+.menstrual {
+  background: #ff7167;
+}
+
+.ovulating {
+  background: #64d1a8;
+}
+
+.luteral {
+  background: #18515c;
+}
