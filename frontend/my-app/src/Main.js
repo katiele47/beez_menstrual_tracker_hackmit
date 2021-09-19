@@ -24,7 +24,7 @@ function Main() {
          </div>
          <div className="reference mb-4 mt-0">
           <ul className="mb-4">
-                     <li> <div className="circle follicula"></div> follicula phase</li>
+                     <li> <div className="circle follicula"></div> follicular phase</li>
                         <li><div className="circle ovulating"></div> Ovulation</li>
                         <li><div className="circle luteral"></div> luteral phase</li>
                         <li><div className="circle menstrual"></div> menstrual phase</li> 
