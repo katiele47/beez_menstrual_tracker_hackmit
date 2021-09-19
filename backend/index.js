@@ -1,6 +1,8 @@
 require("dotenv").config();
 const { default: axios } = require("axios");
 const express = require("express");
+const cors = require("cors");
+const cookieParser = require("cookie-parser");
 
 const fs = require("fs");
 const path = require("path");
@@ -13,6 +15,14 @@ const modelData = fs.readFileSync(modelPath);
 const model = new tangram.Model(modelData.buffer);
 
 const app = express();
+
+
+
+var corsOptions = {
+    origin: "http://localhost:8081",
+  };
+app.use(cors(corsOptions));
+app.use(cookieParser());
 
 app.use(express.json());
 
@@ -228,7 +238,6 @@ app.post("/getPredictionResult", (req, res) => {
     const today = new Date().getTime()-(offset*60*1000);;
     
     let msg = "";
-
     //These are not all the possible cases but good enough for demo
     //The furthest date of prediction is the next menstrual window
 

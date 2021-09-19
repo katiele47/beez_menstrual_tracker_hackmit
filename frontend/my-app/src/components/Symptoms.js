@@ -51,7 +51,7 @@ const resp={}
           
            resp =await  axios.post("http://localhost:8080/getPredictionResult",symptoms)
         }catch(err){
-           
+  
             alert(err)
         }
         console.log(resp)
@@ -143,9 +143,6 @@ const resp={}
                            <h6 className="sym_text">angry</h6>
                          </div>  
                         </div>   
-
-
-
 
                         <h2 className="sub-heading"> pain</h2>
                         <div className="row pain">
